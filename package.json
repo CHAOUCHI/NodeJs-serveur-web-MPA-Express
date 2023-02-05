@@ -1,0 +1,21 @@
+{
+  "name": "server-web-express",
+  "version": "1.0.0",
+  "description": "Serveur web express.js",
+  "main": "app.js",
+  "scripts": {
+    "app": "nodemon app.js"
+  },
+  "keywords": [
+    "nodejs",
+    "express.js"
+  ],
+  "author": "Massinissa CHAOUCHI",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
