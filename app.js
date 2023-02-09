@@ -32,8 +32,8 @@ app.use(function(req,res,next){
      * Exemple 2 : http://localhost:3000/ress/image.png -> Ressources : ress/image.png
      * La ressource c'est le chemin vers le fichier + le nom du fichier
      */
-    const ressource = req.originalUrl;          
-    res.status(200).sendFile(ressource,options,function(err){
+    const ressource = req.originalUrl;  
+     res.status(200).sendFile(ressource,options,function(err){
         if(err){
             /**
              * Si une erreur se produit j'affiche l'erreur dans la console.
@@ -42,7 +42,8 @@ app.use(function(req,res,next){
             console.log(err);
             next();
         }
-    });
+    }
+    );
 })
 
 /**
@@ -54,7 +55,7 @@ app.use(middleware.Error404)
 /**
  * Start server on localhost:3000
  */
-app.listen(3000,function(){
+app.listen(8525,function(){
     console.log("Server starts");
 });
 
